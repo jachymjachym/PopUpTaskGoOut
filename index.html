@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pop up task</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="frontend/css/main.css" />
+
+</head>
+<body>
+    
+    <div class="btn-wrapper">
+        <button data-type="trigger" data-popup="email">Email</button>
+        <button data-type="trigger" data-popup="name">Name</button>
+    </div>
+    
+    <div class="popup_content hidden" id="email">
+        
+        <form>
+            <input type="text" data-validation="validate" placeholder="Email">
+            <button data-type="close" type="button">Close</button>
+            <button data-type="submit" type="button">Submit</button>
+        </form>
+        
+    </div>
+    
+    <div class="popup_content hidden" id="name">
+        
+        <form>
+            <input type="text" placeholder="Name">
+            <button data-type="close" type="button">Close</button>
+            <button data-type="submit" type="button">Submit</button>
+        </form>
+        
+    </div>
+    
+    <script src="frontend/js/bundle.js"></script>
+</body>
+</html>
